@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Patrick+Hand&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+     font-style: normal;
+}
+
+
+body {
+  background-color: #Fee0ab;
+  padding: 20px;
+}
+
+.titulo-central {
+  text-align: center;
+  color: #AF7550;
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-shadow: -2px -2px 0 #684530;
+}
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+}
+
+/* FORMULARIO */
+
+.consigna{
+  margin-top: 5px;
+  margin-bottom: 15px;
+  justify-content: center;
+  display: flex;
+  color: #AF7550;
+  font-family: "Bagel Fat One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.formulario-container {
+  width: 35%;
+  background-color: #Fcefde;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="text"],
+input[type="url"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#preview {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: #F4B756;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+
+/* RECETAS */
+.recetas-container {
+  width: 65%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  --s: 100px; /* control the size*/
+  --c1: #cad079;
+  --c2: #80ab80;
+  
+  --_g: 
+     var(--c2) 6%  14%,var(--c1) 16% 24%,var(--c2) 26% 34%,var(--c1) 36% 44%,
+     var(--c2) 46% 54%,var(--c1) 56% 64%,var(--c2) 66% 74%,var(--c1) 76% 84%,var(--c2) 86% 94%;
+  background:
+    radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
+    radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
+    var(--c1);
+  background-size: var(--s) var(--s);
+}
+
+.recetas-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.receta {
+  width: 45%;
+  background-color: #Fcefde;
+  border: 1px solid #af7550;
+  padding: 15px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.receta h3{
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #AF7550;
+}
+
+.receta img {
+  width: 295px;
+  height: 295px;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 8px;
+}
+
+.eliminar-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #E7863E;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* INGREDIENTES DESPLEGABLE */
+.oculto {
+  display: none;
+  
+}
+
+.ingredientes p {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.toggle-btn {
+  background-color: #cad079;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-shadow: -1px -2px 0 #7f834d;
+  font-size: 18px;
+}
+
+.link-receta {
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #80ab80;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  text-shadow: -1px -2px 0 #3d573d;
+  font-size: 20px;
+}
