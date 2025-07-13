@@ -1,2 +1,3 @@
 # trabajointegrador-Galleguillo-Victoria
 Trabajo integrado - Pilartecno - Modulo de Javascript - Galleguillo Victoria Antonela
+Este trabajo trata de un recetario, donde se muestran algunas recetas ya cargadas y se le permite al usuario poder agregar más, donde se puede, mediante un formulario: ingresar nombre de la receta, ingresar ingredientes, y opcionalmente, un link que te dirija a donde puedas ver la receta paso a paso y la posibilidad de cargar una imagen -si no lo hace, se cargará la receta con una imagen predeterminada.
